@@ -1,0 +1,106 @@
+$first-color: #251c19;
+$second-color: #c78163;
+$third-color: #16110f;
+
+
+.shop{
+    padding: 1rem 0;
+    background-color: $third-color;
+    text-align: center;
+    button{
+        background-color: #c78163;
+        color: #fff;
+        border: none; 
+        margin: 15px ;
+        padding: 18px 32px;
+        border-radius: 50px;
+        cursor: pointer; 
+}
+    h1 {
+        font-size: 2rem;
+        padding: 2rem 0;
+        color: $second-color;
+      }
+    .shop-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #fff;
+        padding: 1rem;
+        .shop-box{
+            text-align: center;
+             width: 30%;
+             padding: 0 0 2rem 0;
+             @media (max-width: 900px) { 
+                    width: 50%;
+                }
+                @media (max-width: 470px) { 
+                    width: 100%;
+                }
+                .shop-img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    &:hover img{
+                        transform: rotateY(180deg);
+                        opacity: 0.2;
+                        transition: transform 0.5s ease, opacity 0.5s ease;
+}
+                    
+                    img{
+                            width:200px;
+                            height: 200px;
+                            object-fit: cover;
+                            border-radius: 100%;
+                            transition: 0.2s ease-in-out;
+
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+                }
+                button{ 
+                    right: 0;
+                    background-color: #c78163;
+                    color: #fff;
+                    border: none;
+                    width: 40%;
+                    margin: 15px ;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.2s ease-in-out;
+
+                }
+        }
+    }
+    .pagination{
+
+        span{
+            color: $second-color;
+            padding: 1rem;
+            cursor: pointer; 
+            padding:   0.7rem;
+            margin:  5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        
+            &:hover {
+              background-color: $second-color;
+              color:$third-color;
+            }
+            &:hover:not(.active){ 
+              opacity: 0.7;
+
+            }
+            &.active {
+                background-color: $second-color;
+                color: #fff;
+              }
+        }
+    }
+    
+}

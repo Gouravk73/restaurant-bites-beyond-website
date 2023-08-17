@@ -1,0 +1,227 @@
+// Blog.scss
+$first-color: #251c19;
+$second-color: #c78163;
+$third-color: #16110f;
+
+.blog {
+    background-color: $first-color;
+
+  .blog-img {
+    position: relative;
+    background-image: url('../../assets/Blog/BlogImage.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vw;  
+    background-color: grey;
+
+
+    h1, h2 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: $second-color;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: bolder;
+      @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 4rem;
+      font-weight: lighter;
+      margin-top: 6rem;
+      @media screen and (max-width: 600px) {
+        font-size: 1.7rem;
+        margin-top: 3rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute; 
+      width: 100%;
+      height: 100%;
+      background-color: $first-color;
+      opacity: 0.75;  
+    }
+  }
+  $first-color: #251c19;
+$second-color: #c78163;
+
+/* banner css */
+
+.blog-search-food-banner{
+    text-align: center;
+    padding: 5rem;
+    @media (max-width:500px) {
+        padding: 2rem;
+    }
+  h1 {
+    color: $second-color;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    @media (max-width:500px) {
+        font-size: 2rem;
+    }
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    padding: 0.3rem 1rem 0.3rem 2rem;
+    margin-bottom: 15px;
+    overflow: hidden;
+    @media (max-width:500px) {
+        width: 80%;
+    }
+}
+}
+/*
+
+blog recepics ccss
+*/
+.blog2{ 
+    display:flex;
+    width:100%;
+
+  .blog-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    width:70%;
+
+
+    div {
+        width: 270px;
+        min-height: 280px;
+        cursor: pointer;
+        @media (max-width:470px) {
+          width: 180px;
+          min-height: 180px;
+        }
+        @media (max-width:340px) {
+          width: 150px;
+          min-height: 150px;
+        }
+      a {
+        img {
+          object-fit: cover;
+          width: 90%;
+          height: auto;
+          border-radius: 50px;
+
+          &:hover{
+            opacity: 0.5;
+          }
+            } 
+              &:hover{
+                img {
+                    transition: opacity 1s;
+                    opacity: 0.2; 
+                }}
+      }
+
+      h1 {
+        color: $second-color;
+        font-size: 0.9rem; 
+        margin-top: 10px;
+      }
+    }
+ 
+  }
+
+
+
+
+.blog-meal-choice{
+    padding: 0 10px 0 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .blog-filter {
+    h2 {
+      color: $second-color;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    p {
+      color: $second-color;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+
+  }
+  
+  .meal-type,.meal-Cuisine-diet,.meal-special-diet  {
+     
+
+    h2 {
+      color: $second-color;
+      font-size: 1.1rem;
+       margin: 10px -12px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+      accent-color:$second-color;
+    }
+
+    label {
+      color: $second-color;
+      font-size: 16px;
+    }
+    
+  }
+}
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 0 0 ;
+  span{
+      color: $second-color;
+      padding: 1rem;
+      cursor: pointer; 
+      padding:   0.7rem;
+      margin:  5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $second-color;
+        color:$third-color;
+      }
+      &:hover:not(.active){ 
+        opacity: 0.7;
+
+      }
+      &.active {
+          background-color: $second-color;
+          color: #fff;
+        }
+  }
+}
+
+}
+
+
+

@@ -1,0 +1,100 @@
+
+.footerone{
+    display:flex ;
+    justify-content: space-around;
+     background-color:#181110;
+     padding-top: 2rem;
+     align-items: center;
+    color:#c78163;
+    .footer1{
+
+    padding:1rem 0 4rem 1rem;
+
+        h4{ 
+            font-size: 1.45rem;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+        p{
+            padding:0.3rem 0 1rem 0.3rem;
+
+            font-size:1rem; 
+            font-weight: 200;
+        }
+        a{
+            text-decoration: none;
+        }
+        .followicons{
+     cursor: pointer;
+            
+            padding: 0.7rem 0 0 0.3rem;
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+    }
+    .footer3{
+        padding-bottom: 4rem;
+       
+        
+        h2{
+            font-size: 2.5rem;
+            border-bottom: 3px solid #fff;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+        p{
+            padding:0.3rem 0 1rem 0.3rem;
+            font-size:1rem; 
+        font-weight: 200;
+        }
+    }
+    .footer2{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        padding-bottom: 4rem;
+    }
+ 
+    @media (max-width:800px) {
+        width: 100%;
+        justify-content: center;
+        display: inline-block;
+       
+        .footer1 {
+            text-align: center;
+            h4{
+                font-size: 1.2rem;
+            }
+            .followicons{
+                justify-content: center;
+                padding-left:  8rem;
+                svg{
+                    margin: 15px;
+                }
+            }
+          }
+        .footer3{
+            h2{
+                font-size: 1.5rem;
+            }
+           text-align: center;
+        }
+    }
+    @media (max-width:460px) {
+        .footer1{
+            .followicons{
+                padding-left: 3rem;
+            }
+        }
+}
+}.footer-reserved{
+    background-color: #181110;
+    color: #c78163;
+    text-align: center; 
+    border-top: 1px solid #c78163; 
+
+    padding :    3rem 0;
+}

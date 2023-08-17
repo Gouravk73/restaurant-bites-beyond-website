@@ -1,0 +1,97 @@
+// Home.scss      background-color: rgba(213, 105, 16, 0.739);
+
+// Home.scss
+$first-color: #251c19;
+$second-color: #c78163;
+$third-color: #16110f;
+
+  .carousel .slide {
+    position: relative; /* Create a stacking context for overlay */
+    img {
+      filter: grayscale(60%); 
+}
+  }
+ 
+// Style.scss
+ 
+
+.home2 {
+  text-align: center;
+  padding: 0;
+  margin: -2px 0 0 0;
+  background-color: $third-color;
+ 
+  .textClass{
+    padding-top: 25px;
+  }
+
+  h1 {
+    color:  white;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $second-color;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .main-form{
+  padding: 20px;
+
+    div{
+      text-align: left;
+      margin: 10px 10px;
+      width: 350px;
+      display: inline-block;
+      input {
+        width: 90%; 
+        background: none;
+        border: 1px solid $second-color;
+        font-size: 20px;
+        color: #fff;
+         padding: 3px 0 3px 10px;
+        cursor: pointer; 
+        margin-top: 10px;
+      }
+      input[type="time"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 0.6;
+        filter: invert(0.5); 
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 0.6; 
+        filter: invert(0.5);
+
+}
+       
+      span{
+        color: #fff;
+        font-size: 1.4rem;
+      }
+      
+      
+    }
+ 
+    button{
+    background-color: rgba(213, 105, 16, 0.739);
+    color: #fff;
+    padding: 10px  24px;
+    margin: 25px 0 0 70px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($second-color, 30%);
+    }
+    }
+    
+   
+  }
+}
+ 

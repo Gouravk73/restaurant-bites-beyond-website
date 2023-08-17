@@ -1,0 +1,86 @@
+export  const MainCourse=[
+    {
+        id: 'MC1',
+        title: 'Butter Chicken',
+        description: 'Chicken cooked in a rich tomato and butter-based gravy',
+        price: '32.99',
+      },
+      {
+        id: 'MC2',
+        title: 'Paneer Tikka Masala',
+        description: 'Grilled cottage cheese in a creamy tomato sauce',
+        price: '11.50',
+      },
+      {
+        id: 'MC3',
+        title: 'Dal Makhani',
+        description: 'Slow-cooked black lentils in a creamy sauce',
+        price: '9.99',
+      },
+      {
+        id: 'MC4',
+        title: 'Tandoori Chicken',
+        description: 'Marinated chicken roasted in a tandoor (clay oven)',
+        price: '13.50',
+      },
+      {
+        id: 'MC5',
+        title: 'Palak Paneer',
+        description: 'Cottage cheese cooked in spinach gravy',
+        price: '10.99',
+      },
+      {
+        id: 'MC6',
+        title: 'Vegetable Korma',
+        description: 'Mixed vegetables in a creamy and aromatic sauce',
+        price: '10.50',
+      },
+      {
+        id: 'MC7',
+        title: 'Aloo Gobi',
+        description: 'Potatoes and cauliflower cooked with spices',
+        price: '9.50',
+      },
+      {
+        id: 'MC8',
+        title: 'Rogan Josh',
+        description: 'Lamb cooked in a rich and aromatic gravy',
+        price: '15.99',
+      },
+      {
+        id: 'MC9',
+        title: 'Fish Curry',
+        description: 'Fish fillets cooked in a spicy tomato-based curry',
+        price: '13.75',
+      },
+      {
+        id: 'MC10',
+        title: 'Malai Kofta',
+        description: 'Deep-fried vegetable dumplings in a creamy sauce',
+        price: '10.25',
+      },
+      {
+        id: 'MC11',
+        title: 'Chicken Tikka',
+        description: 'Grilled marinated chicken pieces',
+        price: '12.50',
+      },
+      {
+        id: 'MC12',
+        title: 'Matar Paneer',
+        description: 'Green peas and cottage cheese in a tomato-based sauce',
+        price: '11.99',
+      },
+      {
+        id: 'MC13',
+        title: 'Chicken Curry',
+        description: 'Chicken cooked in a flavorful curry sauce',
+        price: '11.75',
+      },
+      {
+        id: 'MC14',
+        title: 'Prawn Masala',
+        description: 'Prawns cooked in a spicy and tangy masala',
+        price: '14.50',
+      },
+     ] ;

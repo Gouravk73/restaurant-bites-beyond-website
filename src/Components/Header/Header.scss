@@ -1,0 +1,136 @@
+// Header.scss
+
+// Variables
+$first-color: #251c19;
+$second-color: #c78163;
+ 
+.header {
+  z-index: 2;
+  background-color: $first-color;
+  padding: 2px 0 0 0;
+  position: sticky;
+    top: 0;
+
+   nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 10%;
+    .mobilelogo{
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+        a{
+          font-size: 1.3rem;
+          text-decoration: none;
+          font-weight: 500;
+          color: $second-color;
+          transition: 0.3s ease-in-out;
+          img{
+            width: 150px;
+          }
+          &:hover {
+            color: white;
+          }
+        }
+        .cart-icon {
+          position: relative;
+        }
+        
+        .cart-item-count {
+          position: absolute;
+          top: -20px;
+          right: 0;
+          color: white;
+          padding: 4px 8px;
+        }
+      }
+    }
+    .open-close-icon { 
+      
+      display: none; 
+      padding-right:2rem ;
+      padding-left: 50px;
+      
+
+     
+    }
+    @media (max-width: 857px) {
+      justify-content: space-between;
+      padding: 0.5rem 1rem 0 1rem;
+
+      .mobilelogo{
+        display: block;
+        img{width: 130px; }
+      }
+
+      .nav-links-mobile-close{
+        display: none;
+      }
+      .nav-links-mobile{
+        display: block; 
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 108px;
+        right: 0;
+        width: 250px;
+        height: auto;
+        background-color: #321E1E   ; 
+        transition: 2.9s ease-in-out; 
+        li {
+          list-style: none;
+          padding: 1rem 0 0.5rem 0.7rem;
+            a{
+            font-size: 1.5rem;
+            padding: 0.5rem; 
+            text-decoration: none;
+            font-weight: 500;
+            color: $second-color;
+            transition: 0.3s ease-in-out;
+            img{ 
+              width: 90px;
+              float: left;
+              padding: 0;
+            }
+            
+            &:hover {
+              color: white;
+            }
+          }
+        }
+        .mobile-nav-image{ 
+          justify-content: center;
+          display: flex;
+          padding: 0;
+        }
+        .cart-icon{
+          display: none;
+        }
+      }
+      .open-close-icon{
+        display: block;
+        margin:  0 0  0 1rem;
+
+        svg {
+          font-size: 25px;
+          color: $second-color; 
+          cursor: pointer;
+          &:hover {
+            color: white;
+          }
+        }
+        
+      }
+    }
+  }
+
+
+}

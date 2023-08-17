@@ -1,0 +1,137 @@
+$first-color: #251c19;
+$second-color: #c78163;
+$third-color: #16110f;
+
+.homeMenu { 
+  background-color: $third-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 30px 0;
+  height: auto;
+
+  .homeMenu-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      padding: 15px;
+    
+    }
+
+    p {
+      color: $second-color;
+      margin-bottom: 4rem;
+      font-weight: lighter;
+    }
+  }
+
+  .homeMenu-icons {
+      width: 70%;
+      display: flex;
+      margin-bottom: 2rem;
+    @media (max-width: 540px) {
+      width: 100%;
+    }
+    .icon {
+      width: 100%;
+      display: flex; 
+      justify-content: space-around;
+      color: whitesmoke;
+
+      img {
+        width: 110px;
+        padding: 1.2rem;
+        margin-left: 1rem;
+        border-radius: 50%;
+        object-fit: contain;
+        background-color: grey;
+        box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.8);
+        transition: 0.6s ease-in-out;
+        &:hover{
+          box-shadow: none;
+
+        }
+        
+        &:hover:not(.active){
+          transform:  scale(1.1);
+          border: 2px solid $second-color;
+           
+}
+      }
+      .active {
+        background-color: rgb(96, 59, 59);
+
+      }
+      p{
+        display: flex;
+        align-items: center;
+         justify-content: center;
+      }
+    }
+ 
+    @media (max-width: 540px) {
+      .icon {
+         flex-wrap: wrap;
+        flex-direction: flex;  
+        width: 95%;
+      justify-content: center; 
+
+
+        img {
+          margin-bottom: 15px;
+          width: 70px;
+        }
+      }
+    }
+  }
+
+  .homeMenu-data { 
+    box-shadow: 1px 2px 56px rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    padding: 1rem;  
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    
+    
+    h1{
+    margin : 25px 0 10px  0;
+    @media (max-width: 540px) {
+      font-size: 1.5rem;
+      padding: 0;
+
+    }
+    
+    
+    } 
+    @media (max-width: 550px) {
+      width: 100%;
+      padding: 1rem 2rem;    }
+    .homeMenu-item{ 
+      
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      color: $second-color;
+      margin-bottom: 0.5rem;
+    }
+    
+  }p{
+      margin-bottom: 2rem;
+    }
+    }
+    
+  }
+}

@@ -1,0 +1,88 @@
+$first-color: #251c19;
+$second-color: #c78163;
+.about{
+    justify-content: center;
+    align-items: center;
+    background-color: $first-color;
+    .about-logo{
+        min-height: 500px;
+        background-color: grey;
+        /*Createtheparallaxscrollingeffect*/background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        filter: grayscale(55%);
+         .about-logo-text{
+            position: absolute;
+            top: 40%;
+            left: 35%; 
+            color: $second-color;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 5rem;
+            @media (max-width: 700px) {
+                font-size: 4rem;
+            left: 25%; 
+            top: 32%;
+            }
+            @media (max-width: 430px) {
+            font-size: 3.2rem;
+            left: 18%; 
+            top: 40%;
+}
+         }
+    }
+
+
+    .about-page1{
+        display: flex;
+        justify-content: center;
+        padding:   2rem;
+        border-bottom: 1px solid white;
+        .about-page1-left {
+            padding: 2rem;
+            flex: 1;
+            h1{ 
+                margin-bottom: -15px;
+                font-size: 7.3vw;
+                color: rgba(0,0,0,0.5);
+                opacity: 0.6;
+            }
+            h2{
+                color: $second-color;
+                margin-top: -50px;
+                font-size: 3vw;
+                padding: 0 0 0 3rem; 
+            }
+          }
+          .about-page1-right {
+            flex: 1;
+            p{
+                color: white;
+                opacity: 0.6;
+                font-size: 1.1rem;
+            }
+          }
+        @media (max-width: 798px) {
+            display: inline-block;
+        .about-page1-left {
+            h1{
+                font-size: 3rem;
+                margin-bottom: 0;
+            }
+            h2{
+                color: $second-color;
+                margin-top: 0;
+                font-size: 2rem;
+                padding: 0 0 0 3rem; 
+            }
+        }
+        }
+    }
+ 
+   
+}
+ 
